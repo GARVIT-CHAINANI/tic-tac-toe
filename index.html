@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document-GARVIT</title>
+</head>
+<body>
+
+    <button id="modes" type="button">Dark Mode</button>
+
+<h1 id="heading">TIC TAC TOE</h1>
+<div id="gameContainer">
+    <button class="boxes" type="button"></button>
+    <button class="boxes" type="button"></button>
+    <button class="boxes" type="button"></button>
+    <button class="boxes" type="button"></button>
+    <button class="boxes" type="button"></button>
+    <button class="boxes" type="button"></button>
+    <button class="boxes" type="button"></button>
+    <button class="boxes" type="button"></button>
+    <button class="boxes" type="button"></button>
+</div>
+
+<button class="restart disappear" type="button" onclick="restart()">RESTART</button>
+
+<div id="startingBox">
+    <button id="play" type="button" onclick="playGame()">PLAY🎮</button>
+    <button id="back" type="button" onclick="goBack()">BACK!</button>
+</div>
+
+<audio id="myAudio" muted >
+    <source src="gameBg.mp3">
+</audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
