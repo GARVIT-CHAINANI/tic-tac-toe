@@ -28,6 +28,7 @@ winner = "x"
 
 boxesArray.forEach(function(box) {
     box.addEventListener("click", function () {
+    if (gameStart) {
         if (!gameWon && box.innerText === "") {
             if (player === "first") {
                 heading.innerText="O turn"
@@ -44,7 +45,7 @@ boxesArray.forEach(function(box) {
                 player = "first";
             }
             checkWin();
-        }
+        }}
     });
 });
 
