@@ -1,4 +1,3 @@
-
 let body = document.querySelector("body")
 let modes = document.querySelector("#modes")
 let currMode = "light"
@@ -28,7 +27,10 @@ winner = "x"
 
 boxesArray.forEach(function(box) {
     box.addEventListener("click", function () {
+  // this 👇 if statment is not in internate 
     if (gameStart) {
+  // because i found this error later     
+  
         if (!gameWon && box.innerText === "") {
             if (player === "first") {
                 heading.innerText="O turn"
@@ -111,6 +113,7 @@ backBtn.addEventListener("click", function() {
 })
 
 let gameStart = false
+
 function playGame() {
     gameStart = true
     document.querySelector("#startingBox").style.visibility="hidden"
