@@ -110,7 +110,9 @@ backBtn.addEventListener("click", function() {
     window.close()
 })
 
+let gameStart = false
 function playGame() {
+    gameStart = true
     document.querySelector("#startingBox").style.visibility="hidden"
     var audio = document.getElementById('myAudio');
     audio.muted = false;
